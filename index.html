@@ -507,6 +507,20 @@
                     <h3>物理海洋学教材</h3>
                     <p>课程核心内容</p>
                 </div>
+                <div class="nav-card" data-section="chemistry">
+                    <h3>海洋科学化学模块</h3>
+                    <p>化学海洋学知识</p>
+                </div>
+                <div class="nav-card" data-section="exams">
+                    <h3>📝 往年例题汇总</h3>
+                    <p>物理+化学例题</p>
+                </div>
+                <div class="nav-card ai-assistant" style="border-left-color: #4CAF50;">
+                    <a href="weixin://dl/business/?appid=wxd5201eb08d2fa15c&path=pages/agentChat/index&query=showAuthDirectly%3D1%26id%3D4MbphsUIqjvg" target="_blank" style="text-decoration: none; color: inherit; display: block;">
+                        <h3>🤖 AI智能助手</h3>
+                        <p>海洋科学基础助手</p>
+                    </a>
+                </div>
             </nav>
             
             <div class="content-area">
@@ -1584,6 +1598,533 @@
             </div>
         </section>
         
+        <section data-section="chemistry">
+            <h2>海洋科学化学模块</h2>
+            
+            <div class="textbook-container">
+                <div class="chapter-navigation">
+                    <h3>章节导航</h3>
+                    <button class="chapter-btn active" data-chapter="chem-1">化学海洋学基础</button>
+                    <button class="chapter-btn" data-chapter="chem-2">海洋碳循环系统</button>
+                    <button class="chapter-btn" data-chapter="chem-3">营养盐生物地球化学</button>
+                    <button class="chapter-btn" data-chapter="chem-4">海洋地球化学</button>
+                    <button class="chapter-btn" data-chapter="chem-5">海洋酸化与全球变化</button>
+                    <button class="chapter-btn" data-chapter="chem-6">往年例题解析</button>
+                </div>
+                
+                <div class="chapter-content">
+                    <div id="chapter-chem-1" class="chapter active">
+                        <h3>第一章 化学海洋学基础</h3>
+                        <h4>1.1 学科定义与研究范畴</h4>
+                        <p>化学海洋学是研究海洋中化学物质的组成、分布、循环和反应的学科，是海洋科学的重要分支，连接物理海洋学、生物学、地质学和大气科学。其核心任务是揭示海洋化学过程与全球气候变化、海洋生态系统之间的相互作用。</p>
+                        
+                        <h4>1.2 海水的化学组成</h4>
+                        <h5>常量元素（Major Elements）</h5>
+                        <p>海水中含量大于1mg/kg的元素，占海水总盐度的99.9%以上，遵循Marcet-Dittmar恒比定律。</p>
+                        <table style="width:100%;border-collapse:collapse;margin:15px 0;">
+                            <tr><th>元素</th><th>浓度(mg/kg)</th><th>占盐度比例</th></tr>
+                            <tr><td>氯(Cl⁻)</td><td>19350</td><td>55.0%</td></tr>
+                            <tr><td>钠(Na⁺)</td><td>10760</td><td>30.6%</td></tr>
+                            <tr><td>硫酸根(SO₄²⁻)</td><td>2710</td><td>7.7%</td></tr>
+                            <tr><td>镁(Mg²⁺)</td><td>1290</td><td>3.7%</td></tr>
+                            <tr><td>钙(Ca²⁺)</td><td>410</td><td>1.2%</td></tr>
+                            <tr><td>钾(K⁺)</td><td>390</td><td>1.1%</td></tr>
+                        </table>
+                        
+                        <h5>微量元素（Trace Elements）</h5>
+                        <p>含量低于1mg/kg，但对生物地球化学过程至关重要：</p>
+                        <ul>
+                            <li><strong>营养元素</strong>：氮(N)、磷(P)、硅(Si) - 限制海洋初级生产力</li>
+                            <li><strong>痕量金属</strong>：铁(Fe)、锰(Mn)、铜(Cu)、锌(Zn) - 参与酶反应和光合作用</li>
+                            <li><strong>放射性元素</strong>：铀(U)、钍(Th)、氚(H³)、¹⁴C - 用于定年和水团示踪</li>
+                            <li><strong>稀有气体</strong>：氦(He)、氖(Ne)、氩(Ar) - 水团形成条件指示</li>
+                        </ul>
+                        
+                        <h4>1.3 溶解气体</h4>
+                        <ul>
+                            <li><strong>氮气(N₂)</strong>：最丰富的溶解气体，约占溶解气体总量的48%</li>
+                            <li><strong>氧气(O₂)</strong>：对海洋生物至关重要，表层饱和（~280μmol/kg），深层因有机物分解而消耗</li>
+                            <li><strong>二氧化碳(CO₂)</strong>：参与碳循环和酸碱平衡，表层约2000μmol/kg</li>
+                            <li><strong>惰性气体</strong>：Ar、Ne、Kr、Xe - 用于水团示踪和古气候重建</li>
+                        </ul>
+                        
+                        <h4>1.4 盐度与实用盐度标度</h4>
+                        <p><strong>盐度定义</strong>：海水中溶解物质的总量，单位为psu（practical salinity unit）。</p>
+                        <p><strong>实用盐度标度(PSS-78)</strong>：通过测量电导率计算盐度，标准海水KCl溶液在15°C时的电导率比为1时，盐度定义为35.000 psu。</p>
+                        <p><strong>全球平均盐度</strong>：约34.7 psu，红海最高（>40 psu），波罗的海最低（<10 psu）。</p>
+                        
+                        <h4>1.5 海水的pH与缓冲能力</h4>
+                        <p>海水pH约为8.1，呈弱碱性。其缓冲能力主要来自：</p>
+                        <ul>
+                            <li>碳酸盐系统（HCO₃⁻/CO₃²⁻）：最主要的缓冲体系</li>
+                            <li>硼酸盐系统（B(OH)₃/B(OH)₄⁻）：次要缓冲体系</li>
+                            <li>有机物质：贡献较小但不可忽视</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="chapter-chem-2" class="chapter">
+                        <h3>第二章 海洋碳循环系统</h3>
+                        <h4>2.1 碳的存在形态与储量</h4>
+                        <p>海洋是地球上最大的碳库，总碳量约38,000 GtC，是大气碳库的50倍。</p>
+                        <ul>
+                            <li><strong>溶解无机碳(DIC)</strong>：约37,000 GtC，主要形态为HCO₃⁻（占90%）、CO₃²⁻（占9%）、CO₂(aq)（占1%）</li>
+                            <li><strong>溶解有机碳(DOC)</strong>：约680 GtC，分为海洋自生源和陆源</li>
+                            <li><strong>颗粒有机碳(POC)</strong>：约2 GtC，包括生物颗粒和碎屑</li>
+                            <li><strong>碳酸钙(CaCO₃)</strong>：约600 GtC，主要为有孔虫、颗石藻等生物壳体</li>
+                        </ul>
+                        
+                        <h4>2.2 碳酸盐系统平衡</h4>
+                        <p>海水中的CO₂-碳酸盐系统是控制海水pH和碳循环的核心：</p>
+                        <p>CO₂(g) ↔ CO₂(aq) （亨利定律，K_H = 3.3×10⁻² mol/kg/atm）</p>
+                        <p>CO₂(aq) + H₂O ↔ H₂CO₃ （水化反应）</p>
+                        <p>H₂CO₃ ↔ H⁺ + HCO₃⁻ （第一解离，pK₁≈6.0）</p>
+                        <p>HCO₃⁻ ↔ H⁺ + CO₃²⁻ （第二解离，pK₂≈9.1）</p>
+                        
+                        <h4>2.3 海洋碳泵机制</h4>
+                        <p>海洋通过三种泵机制将碳从表层输送至深层：</p>
+                        <h5>1. 物理泵（Solubility Pump）</h5>
+                        <p>CO₂在高纬度冷水区溶解度高，随下沉水团进入深海。</p>
+                        
+                        <h5>2. 生物泵（Biological Pump）</h5>
+                        <p>浮游植物通过光合作用固定CO₂，形成有机物，通过沉降和动物垂直迁移输送至深层。效率约10%的初级生产力被输送至深海。</p>
+                        
+                        <h5>3. 碳酸盐泵（Carbonate Pump）</h5>
+                        <p>钙化生物（珊瑚、有孔虫、颗石藻）形成CaCO₃壳体，沉降至海底。</p>
+                        
+                        <h4>2.4 碳同位素分馏</h4>
+                        <p>利用碳同位素研究碳循环过程：</p>
+                        <ul>
+                            <li><strong>¹³C/¹²C比值(δ¹³C)</strong>：光合作用偏好¹²C，导致有机碳δ¹³C较低（-20‰~-25‰）</li>
+                            <li><strong>¹⁴C定年</strong>：利用放射性碳测定水团年龄，北大西洋深层水约200年，太平洋深层水约1000年</li>
+                        </ul>
+                        
+                        <h4>2.5 海气CO₂交换</h4>
+                        <p>CO₂通量由海气浓度差和气体交换速率决定：</p>
+                        <p>F = k × (pCO₂_air - pCO₂_sea)</p>
+                        <p>其中k为气体交换系数，与风速正相关。</p>
+                    </div>
+                    
+                    <div id="chapter-chem-3" class="chapter">
+                        <h3>第三章 营养盐生物地球化学</h3>
+                        <h4>3.1 主要营养元素</h4>
+                        <ul>
+                            <li><strong>氮(N)</strong>：硝酸盐(NO₃⁻)、亚硝酸盐(NO₂⁻)、铵(NH₄⁺)、溶解有机氮(DON)</li>
+                            <li><strong>磷(P)</strong>：磷酸盐(PO₄³⁻)、溶解有机磷(DOP)</li>
+                            <li><strong>硅(Si)</strong>：硅酸盐(SiO₂·nH₂O)</li>
+                        </ul>
+                        
+                        <h4>3.2 营养盐的垂直分布</h4>
+                        <p>典型的营养盐垂直分布特征：</p>
+                        <ul>
+                            <li><strong>表层(0-100m)</strong>：被浮游植物大量消耗，浓度极低（NO₃⁻<0.1μmol/kg）</li>
+                            <li><strong>真光层下方(100-1000m)</strong>：有机物分解再生，浓度迅速增加</li>
+                            <li><strong>深层(>1000m)</strong>：浓度稳定在较高水平（NO₃⁻约40μmol/kg，PO₄³⁻约2.5μmol/kg）</li>
+                        </ul>
+                        
+                        <h4>3.3 氮循环</h4>
+                        <p>海洋氮循环是生物地球化学的核心循环之一：</p>
+                        <ul>
+                            <li><strong>固氮作用</strong>：N₂ → NH₄⁺，由固氮蓝藻（如Trichodesmium）完成，热带海洋重要</li>
+                            <li><strong>硝化作用</strong>：NH₄⁺ → NO₂⁻ → NO₃⁻，由硝化细菌在有氧条件下进行</li>
+                            <li><strong>反硝化作用</strong>：NO₃⁻ → N₂，在低氧环境（如东太平洋氧最小值区）发生</li>
+                            <li><strong>同化作用</strong>：NO₃⁻/NH₄⁺ → 有机氮，被浮游植物吸收</li>
+                        </ul>
+                        
+                        <h4>3.4 磷循环</h4>
+                        <p>磷在海洋中主要以溶解态和颗粒态存在：</p>
+                        <ul>
+                            <li>溶解无机磷(DIP)：主要为PO₄³⁻</li>
+                            <li>溶解有机磷(DOP)：磷酸酯等有机化合物</li>
+                            <li>颗粒磷：生物体内的磷和吸附在颗粒物上的磷</li>
+                        </ul>
+                        
+                        <h4>3.5 Redfield比值与营养限制</h4>
+                        <p><strong>Redfield比值</strong>：海洋浮游生物中C:N:P:O₂的原子比例约为106:16:1:138。</p>
+                        <p><strong>限制因子</strong>：</p>
+                        <ul>
+                            <li>寡营养海区（如亚热带涡旋）：氮限制</li>
+                            <li>高营养低叶绿素区(HNLC)：铁限制（如南大洋、赤道太平洋）</li>
+                            <li>近岸和上升流区：硅限制（硅藻生长）</li>
+                        </ul>
+                        
+                        <h4>3.6 铁限制与铁施肥实验</h4>
+                        <p>铁是浮游植物光合作用必需的微量元素，在HNLC区限制初级生产力。IRONEX等铁施肥实验证实了铁的限制作用，但大规模施肥的生态效应仍有争议。</p>
+                    </div>
+                    
+                    <div id="chapter-chem-4" class="chapter">
+                        <h3>第四章 海洋地球化学</h3>
+                        <h4>4.1 大洋地壳结构</h4>
+                        <p>大洋地壳平均厚度约7km，分为三层：</p>
+                        <ul>
+                            <li><strong>层1（沉积层）</strong>：0.5-1km厚，主要为远洋沉积物</li>
+                            <li><strong>层2（玄武岩层）</strong>：1-2km厚，枕状玄武岩和玄武岩流</li>
+                            <li><strong>层3（辉长岩层）</strong>：4-5km厚，粗粒辉长岩和辉绿岩</li>
+                        </ul>
+                        
+                        <h4>4.2 大洋玄武岩地球化学</h4>
+                        <p>大洋中脊玄武岩(MORB)是洋壳的主要组成，其成分反映了地幔源区特征：</p>
+                        <ul>
+                            <li>主要元素：SiO₂~50%，Al₂O₃~16%，FeO~8%，MgO~7%</li>
+                            <li>微量元素：亏损大离子亲石元素(LILE)，富集高场强元素(HFSE)</li>
+                            <li>同位素：Sr同位素比值低(⁸⁷Sr/⁸⁶Sr≈0.7025)</li>
+                        </ul>
+                        
+                        <h4>4.3 海底热液活动</h4>
+                        <p>海底热液喷口（黑烟囱）是海洋与地壳物质交换的重要场所：</p>
+                        <ul>
+                            <li>温度：300-400°C</li>
+                            <li>化学成分：富含H₂S、Fe、Mn、Cu、Zn等</li>
+                            <li>生物群落：化能自养细菌为基础的独特生态系统</li>
+                            <li>全球热液通量：约3×10¹⁴ g/年，影响海洋化学组成</li>
+                        </ul>
+                        
+                        <h4>4.4 海洋沉积物地球化学</h4>
+                        <p>海洋沉积物记录了地球历史的重要信息：</p>
+                        <ul>
+                            <li><strong>钙质软泥</strong>：有孔虫和颗石藻壳体，分布在CCD以上</li>
+                            <li><strong>硅质软泥</strong>：硅藻和放射虫壳体，分布在高生产力区</li>
+                            <li><strong>红黏土</strong>：陆源风尘和火山灰，分布在远洋深海</li>
+                            <li><strong>锰结核</strong>：富含Mn、Fe、Ni、Cu、Co的多金属结核</li>
+                        </ul>
+                        
+                        <h4>4.5 海水成分的演化</h4>
+                        <p>现代海水成分在过去10亿年相对稳定，主要受以下过程控制：</p>
+                        <ul>
+                            <li>河流输入：携带岩石风化产物</li>
+                            <li>生物沉淀：形成CaCO₃和SiO₂沉积</li>
+                            <li>热液活动：洋中脊的物质交换</li>
+                            <li>沉积埋藏：元素的长期储存</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="chapter-chem-5" class="chapter">
+                        <h3>第五章 海洋酸化与全球变化</h3>
+                        <h4>5.1 酸化机制</h4>
+                        <p>人为CO₂排放导致海水pH下降：</p>
+                        <p>CO₂(atm) + H₂O + CO₃²⁻ → 2HCO₃⁻</p>
+                        <ul>
+                            <li>自工业革命以来，大气CO₂从280ppm上升至>420ppm</li>
+                            <li>表层海水pH从~8.2下降至~8.1（下降0.1个单位）</li>
+                            <li>预计到2100年，若CO₂继续排放，pH可能下降0.3-0.4</li>
+                        </ul>
+                        
+                        <h4>5.2 酸化对碳酸盐系统的影响</h4>
+                        <p>酸化导致CO₃²⁻浓度下降，影响CaCO₃饱和度(Ω)：</p>
+                        <p>Ω = [Ca²⁺][CO₃²⁻] / K_sp</p>
+                        <ul>
+                            <li>当Ω<1时，CaCO₃处于不饱和状态，发生溶解</li>
+                            <li>北极和南大洋表层水已接近文石不饱和</li>
+                            <li>珊瑚礁生长速率已下降10-30%</li>
+                        </ul>
+                        
+                        <h4>5.3 生态系统影响</h4>
+                        <ul>
+                            <li><strong>钙化生物</strong>：珊瑚、贝类、有孔虫生长受抑制</li>
+                            <li><strong>浮游植物</strong>：部分物种（如颗石藻）受影响，改变群落结构</li>
+                            <li><strong>鱼类</strong>：影响嗅觉、行为和生长发育</li>
+                            <li><strong>食物链</strong>：从基础生产者到顶级捕食者的级联效应</li>
+                        </ul>
+                        
+                        <h4>5.4 酸化与碳循环反馈</h4>
+                        <p>酸化可能通过多种机制反馈到碳循环：</p>
+                        <ul>
+                            <li><strong>负反馈</strong>：CO₃²⁻减少降低CaCO₃沉淀，减少碳封存</li>
+                            <li><strong>正反馈</strong>：酸化可能增强生物泵效率，增加碳输送</li>
+                            <li><strong>溶解度反馈</strong>：温度升高降低CO₂溶解度</li>
+                        </ul>
+                        
+                        <h4>5.5 减缓与适应策略</h4>
+                        <ul>
+                            <li>减少CO₂排放（根本措施）</li>
+                            <li>海洋碱化（人工添加碱，争议较大）</li>
+                            <li>珊瑚礁保护和恢复</li>
+                            <li>发展耐酸化品种</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="chapter-chem-6" class="chapter">
+                        <h3>第六章 往年例题解析</h3>
+                        <h4>6.1 选择题</h4>
+                        <p><strong>例题1</strong>：海水中最丰富的阴离子是？</p>
+                        <p>A. SO₄²⁻ B. Cl⁻ C. HCO₃⁻ D. Br⁻</p>
+                        <p><strong>答案：B</strong>（氯约占盐度的55%）</p>
+                        
+                        <p><strong>例题2</strong>：Redfield比值中C:N:P的比例是？</p>
+                        <p>A. 100:10:1 B. 106:16:1 C. 120:15:1 D. 90:12:1</p>
+                        <p><strong>答案：B</strong></p>
+                        
+                        <p><strong>例题3</strong>：海洋碳泵中效率最高的是？</p>
+                        <p>A. 物理泵 B. 生物泵 C. 碳酸盐泵 D. 混合泵</p>
+                        <p><strong>答案：B</strong>（生物泵输送约10%的初级生产力）</p>
+                        
+                        <h4>6.2 填空题</h4>
+                        <p><strong>例题1</strong>：海水的平均盐度约为____ psu，表层pH约为____。</p>
+                        <p><strong>答案：34.7；8.1</strong></p>
+                        
+                        <p><strong>例题2</strong>：海洋中碳的主要存在形态是____，约占总碳的____%。</p>
+                        <p><strong>答案：溶解无机碳(DIC)；97%</strong></p>
+                        
+                        <p><strong>例题3</strong>：海气CO₂交换通量与____和____成正比。</p>
+                        <p><strong>答案：海气pCO₂差值；气体交换系数(k)</strong></p>
+                        
+                        <h4>6.3 简答题</h4>
+                        <p><strong>例题1</strong>：简述海洋碳循环的主要过程及其对全球气候变化的影响。</p>
+                        <p><strong>答案要点</strong>：</p>
+                        <ul>
+                            <li>碳的存在形态：DIC、DOC、POC、CaCO₃</li>
+                            <li>碳泵机制：物理泵、生物泵、碳酸盐泵</li>
+                            <li>海气交换：CO₂吸收和释放</li>
+                            <li>对气候变化的影响：海洋作为碳汇吸收约1/3人为排放，减缓变暖；酸化影响生态系统</li>
+                        </ul>
+                        
+                        <p><strong>例题2</strong>：解释营养盐的垂直分布特征及其成因。</p>
+                        <p><strong>答案要点</strong>：</p>
+                        <ul>
+                            <li>表层：低浓度（被浮游植物消耗）</li>
+                            <li>中层：浓度增加（有机物分解再生）</li>
+                            <li>深层：高浓度且稳定（再生过程占主导）</li>
+                            <li>控制因素：光合作用、呼吸作用、垂直输送</li>
+                        </ul>
+                        
+                        <p><strong>例题3</strong>：什么是HNLC区？其形成的主要原因是什么？</p>
+                        <p><strong>答案要点</strong>：</p>
+                        <ul>
+                            <li>HNLC：高营养盐低叶绿素区（如南大洋、赤道太平洋）</li>
+                            <li>主要限制因子：铁（Fe）</li>
+                            <li>铁来源：风尘输送不足，远离大陆</li>
+                            <li>生态效应：尽管营养盐充足，但初级生产力受铁限制</li>
+                        </ul>
+                        
+                        <h4>6.4 计算题</h4>
+                        <p><strong>例题</strong>：已知海水pH=8.1，DIC=2000μmol/kg，碱度=2200μmol/kg，计算CO₃²⁻浓度。（pK₁=6.0，pK₂=9.1）</p>
+                        <p><strong>解答：</strong></p>
+                        <p>利用碳酸盐系统平衡方程：</p>
+                        <p>[CO₃²⁻] = Alkalinity - [HCO₃⁻]</p>
+                        <p>通过pH和pK值计算各形态比例，最终得到[CO₃²⁻]≈200μmol/kg</p>
+                        
+                        <h4>6.5 综合分析题</h4>
+                        <p><strong>例题</strong>：论述海洋酸化对海洋生态系统和全球碳循环的影响，并提出可能的应对策略。</p>
+                        <p><strong>答案要点</strong>：</p>
+                        <ul>
+                            <li>酸化机制：CO₂吸收导致pH下降</li>
+                            <li>生态影响：钙化生物、浮游植物、鱼类、食物链</li>
+                            <li>碳循环反馈：负反馈（CaCO₃溶解）和正反馈（生物泵变化）</li>
+                            <li>应对策略：减排、海洋碱化、生态保护、科学研究</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section data-section="exams">
+            <h2>📝 往年例题汇总</h2>
+            
+            <div class="textbook-container">
+                <div class="chapter-navigation">
+                    <h3>模块导航</h3>
+                    <button class="chapter-btn active" data-chapter="exam-1">物理海洋学例题</button>
+                    <button class="chapter-btn" data-chapter="exam-2">化学海洋学例题</button>
+                    <button class="chapter-btn" data-chapter="exam-3">综合练习题</button>
+                </div>
+                
+                <div class="chapter-content">
+                    <div id="chapter-exam-1" class="chapter active">
+                        <h3>物理海洋学例题</h3>
+                        
+                        <h4>一、选择题</h4>
+                        <p><strong>1.</strong> 以下哪个是地转平衡的条件？</p>
+                        <p>A. 科里奥利力 = 压力梯度力 B. 惯性力 = 科里奥利力 C. 压力梯度力 = 惯性力 D. 摩擦力 = 科里奥利力</p>
+                        <p><strong>答案：A</strong>（地转平衡：科里奥利力与压力梯度力平衡）</p>
+                        
+                        <p><strong>2.</strong> 罗斯贝数(Ro)的定义是？</p>
+                        <p>A. U/(gL) B. U/(fL) C. fL/U D. gL/U</p>
+                        <p><strong>答案：B</strong>（Ro = 惯性力/科里奥利力 = U/(fL)）</p>
+                        
+                        <p><strong>3.</strong> 埃克曼输运的方向是？</p>
+                        <p>A. 与风向相同 B. 与风向相反 C. 北半球向右垂直于风向 D. 北半球向左垂直于风向</p>
+                        <p><strong>答案：C</strong>（埃克曼输运在北半球垂直于风向右偏）</p>
+                        
+                        <p><strong>4.</strong> 以下哪个是热盐环流的驱动力？</p>
+                        <p>A. 风应力 B. 浮力通量 C. 科里奥利力 D. 压力梯度</p>
+                        <p><strong>答案：B</strong>（浮力通量驱动热盐环流）</p>
+                        
+                        <p><strong>5.</strong> 西向强化的原因是？</p>
+                        <p>A. β效应 B. 科里奥利力 C. 摩擦力 D. 压力梯度</p>
+                        <p><strong>答案：A</strong>（β效应导致西边界流强化）</p>
+                        
+                        <h4>二、填空题</h4>
+                        <p><strong>1.</strong> 科里奥利参数f = ____，其中Ω是地球自转角速度，φ是纬度。</p>
+                        <p><strong>答案：2Ωsinφ</strong></p>
+                        
+                        <p><strong>2.</strong> 静力平衡方程为____，说明垂向压力梯度平衡重力。</p>
+                        <p><strong>答案：∂p/∂z = -ρg</strong></p>
+                        
+                        <p><strong>3.</strong> 海洋中的三大水团分别是：____、北大西洋深层水(NADW)、____。</p>
+                        <p><strong>答案：南极底层水(AABW)；南极中层水(AAIW)</strong></p>
+                        
+                        <p><strong>4.</strong> 位涡守恒的条件是____和____。</p>
+                        <p><strong>答案：无粘；无外力</strong></p>
+                        
+                        <h4>三、简答题</h4>
+                        <p><strong>1.</strong> 简述地转流的特征及其在海洋中的应用。</p>
+                        <p><strong>答案要点：</strong></p>
+                        <ul>
+                            <li>特征：沿等压线流动，北半球高压在右，南半球高压在左</li>
+                            <li>无辐散，可用流函数表示</li>
+                            <li>应用：通过温盐资料计算地转流速，分析大洋环流</li>
+                        </ul>
+                        
+                        <p><strong>2.</strong> 什么是Sverdrup平衡？它如何解释大洋环流的形成？</p>
+                        <p><strong>答案要点：</strong></p>
+                        <ul>
+                            <li>Sverdrup平衡：βV = (1/ρ)k·∇×τ</li>
+                            <li>大洋内区经向输运由风应力旋度决定</li>
+                            <li>解释副热带反气旋环流和副极地气旋环流的形成</li>
+                        </ul>
+                        
+                        <p><strong>3.</strong> 解释赤道潜流(EUC)的形成机制。</p>
+                        <p><strong>答案要点：</strong></p>
+                        <ul>
+                            <li>信风导致海面西高东低，形成向东的压力梯度</li>
+                            <li>赤道科氏力为零，压力梯度驱动水体向东加速</li>
+                            <li>层结和位涡约束形成窄强射流</li>
+                        </ul>
+                        
+                        <h4>四、计算题</h4>
+                        <p><strong>例题</strong>：已知某海区风速为10m/s，计算埃克曼输运速度。（ρ=1025kg/m³，f=10⁻⁴s⁻¹）</p>
+                        <p><strong>解答：</strong></p>
+                        <p>埃克曼输运 U_E = τ/(ρf)，τ≈ρC_dU²，C_d≈1.3×10⁻³</p>
+                        <p>τ = 1025 × 1.3×10⁻³ × 10² ≈ 13.3 N/m²</p>
+                        <p>U_E = 13.3 / (1025 × 10⁻⁴) ≈ 130 m²/s</p>
+                    </div>
+                    
+                    <div id="chapter-exam-2" class="chapter">
+                        <h3>化学海洋学例题</h3>
+                        
+                        <h4>一、选择题</h4>
+                        <p><strong>1.</strong> 海水中最丰富的阴离子是？</p>
+                        <p>A. SO₄²⁻ B. Cl⁻ C. HCO₃⁻ D. Br⁻</p>
+                        <p><strong>答案：B</strong>（氯约占盐度的55%）</p>
+                        
+                        <p><strong>2.</strong> Redfield比值中C:N:P的比例是？</p>
+                        <p>A. 100:10:1 B. 106:16:1 C. 120:15:1 D. 90:12:1</p>
+                        <p><strong>答案：B</strong></p>
+                        
+                        <p><strong>3.</strong> 海洋中碳的主要存在形态是？</p>
+                        <p>A. DOC B. POC C. DIC D. CaCO₃</p>
+                        <p><strong>答案：C</strong>（溶解无机碳占总碳的97%）</p>
+                        
+                        <p><strong>4.</strong> HNLC区的主要限制因子是？</p>
+                        <p>A. 氮 B. 磷 C. 硅 D. 铁</p>
+                        <p><strong>答案：D</strong>（高营养盐低叶绿素区受铁限制）</p>
+                        
+                        <p><strong>5.</strong> 海洋酸化的主要原因是？</p>
+                        <p>A. 吸收大气CO₂ B. 河流输入增加 C. 温度升高 D. 生物活动</p>
+                        <p><strong>答案：A</strong>（人为CO₂排放导致海水酸化）</p>
+                        
+                        <h4>二、填空题</h4>
+                        <p><strong>1.</strong> 海水的平均盐度约为____ psu，表层pH约为____。</p>
+                        <p><strong>答案：34.7；8.1</strong></p>
+                        
+                        <p><strong>2.</strong> 海洋碳泵包括：____、____和碳酸盐泵。</p>
+                        <p><strong>答案：物理泵；生物泵</strong></p>
+                        
+                        <p><strong>3.</strong> 海气CO₂交换通量与____和____成正比。</p>
+                        <p><strong>答案：海气pCO₂差值；气体交换系数(k)</strong></p>
+                        
+                        <p><strong>4.</strong> 海洋中氮循环的主要过程包括：固氮、____、____和同化。</p>
+                        <p><strong>答案：硝化；反硝化</strong></p>
+                        
+                        <h4>三、简答题</h4>
+                        <p><strong>1.</strong> 简述海洋碳循环的主要过程及其对全球气候变化的影响。</p>
+                        <p><strong>答案要点：</strong></p>
+                        <ul>
+                            <li>碳的存在形态：DIC、DOC、POC、CaCO₃</li>
+                            <li>碳泵机制：物理泵、生物泵、碳酸盐泵</li>
+                            <li>海气交换：CO₂吸收和释放</li>
+                            <li>对气候变化的影响：海洋作为碳汇吸收约1/3人为排放</li>
+                        </ul>
+                        
+                        <p><strong>2.</strong> 解释营养盐的垂直分布特征及其成因。</p>
+                        <p><strong>答案要点：</strong></p>
+                        <ul>
+                            <li>表层：低浓度（被浮游植物消耗）</li>
+                            <li>中层：浓度增加（有机物分解再生）</li>
+                            <li>深层：高浓度且稳定（再生过程占主导）</li>
+                        </ul>
+                        
+                        <p><strong>3.</strong> 什么是HNLC区？其形成的主要原因是什么？</p>
+                        <p><strong>答案要点：</strong></p>
+                        <ul>
+                            <li>HNLC：高营养盐低叶绿素区（如南大洋、赤道太平洋）</li>
+                            <li>主要限制因子：铁（Fe）</li>
+                            <li>铁来源：风尘输送不足，远离大陆</li>
+                        </ul>
+                        
+                        <h4>四、计算题</h4>
+                        <p><strong>例题</strong>：已知海水pH=8.1，DIC=2000μmol/kg，计算CO₃²⁻浓度。（pK₁=6.0，pK₂=9.1）</p>
+                        <p><strong>解答：</strong></p>
+                        <p>α₂ = [CO₃²⁻]/DIC = K₁K₂ / ([H⁺]² + K₁[H⁺] + K₁K₂)</p>
+                        <p>[H⁺] = 10⁻⁸·¹ ≈ 7.94×10⁻⁹</p>
+                        <p>K₁=10⁻⁶·⁰, K₂=10⁻⁹·¹</p>
+                        <p>α₂ ≈ 0.1，[CO₃²⁻] ≈ 200μmol/kg</p>
+                    </div>
+                    
+                    <div id="chapter-exam-3" class="chapter">
+                        <h3>综合练习题</h3>
+                        
+                        <h4>一、选择题</h4>
+                        <p><strong>1.</strong> 以下哪种现象是物理海洋学和化学海洋学的交叉研究领域？</p>
+                        <p>A. 海气CO₂交换 B. 地转流 C. 大洋玄武岩地球化学 D. 潮汐</p>
+                        <p><strong>答案：A</strong>（涉及物理过程和化学过程）</p>
+                        
+                        <p><strong>2.</strong> 海洋碳循环与物理海洋学的联系是？</p>
+                        <p>A. 环流输送碳 B. 光合作用固定碳 C. 呼吸作用释放碳 D. CaCO₃沉淀</p>
+                        <p><strong>答案：A</strong>（物理过程输送碳）</p>
+                        
+                        <h4>二、综合分析题</h4>
+                        <p><strong>例题1</strong>：论述海洋环流与碳循环的相互作用。</p>
+                        <p><strong>答案要点：</strong></p>
+                        <ul>
+                            <li>环流输送：表层流输送溶解无机碳</li>
+                            <li>深层环流：输送有机碳和碳酸钙</li>
+                            <li>水团形成：高纬度水团携带碳进入深层</li>
+                            <li>上升流：将深层碳带回表层</li>
+                        </ul>
+                        
+                        <p><strong>例题2</strong>：分析厄尔尼诺事件对海洋化学的影响。</p>
+                        <p><strong>答案要点：</strong></p>
+                        <ul>
+                            <li>温跃层变化影响营养盐供应</li>
+                            <li>上升流减弱导致生产力下降</li>
+                            <li>pCO₂变化影响海气交换</li>
+                            <li>溶解氧变化</li>
+                        </ul>
+                        
+                        <p><strong>例题3</strong>：结合物理和化学过程，解释海洋如何调节全球气候。</p>
+                        <p><strong>答案要点：</strong></p>
+                        <ul>
+                            <li>热量输送：洋流调节全球热量分布</li>
+                            <li>碳汇：海洋吸收CO₂减缓变暖</li>
+                            <li>反馈机制：冰-反照率反馈、水汽反馈</li>
+                            <li>生态系统调节：生物泵输送碳</li>
+                        </ul>
+                        
+                        <h4>三、实验设计题</h4>
+                        <p><strong>例题</strong>：设计一个实验来研究海洋酸化对珊瑚生长的影响。</p>
+                        <p><strong>答案要点：</strong></p>
+                        <ul>
+                            <li>控制变量：pH（不同pCO₂水平）</li>
+                            <li>实验对象：珊瑚虫或珊瑚幼体</li>
+                            <li>测量指标：生长速率、钙化速率、存活率</li>
+                            <li>对照组：正常海水pH</li>
+                            <li>实验周期：至少数月</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <footer>
             <p>&copy; 2026 浙江大学海洋科学基础课程知识外脑</p>
         </footer>
@@ -1628,7 +2169,9 @@
             
             function showChapter(chapterId) {
                 chapters.forEach(chapter => {
-                    if (chapter.id === `chapter-${chapterId}`) {
+                    if (chapter.id === `chapter-${chapterId}` || 
+                        chapter.id === `chapter-chem-${chapterId.split('-')[1]}` ||
+                        chapter.id === `chapter-exam-${chapterId.split('-')[1]}`) {
                         chapter.classList.add('active');
                     } else {
                         chapter.classList.remove('active');
